@@ -1,0 +1,156 @@
+html, body {
+  margin: 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 30px;
+}
+
+/*Navigation Bar*/
+
+nav {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  padding-top: 15px;
+  z-index:999;
+  transition: .5s all ease;
+}
+
+nav.active {
+  background: transparent;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+
+  color: white;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+a {
+  transition: .5s all ease;
+}
+
+a:link, a:visited {
+  color: white;
+
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/*Active Navigation Bar*/
+
+a.active {
+  color: black;
+}
+
+a:link.active, a:visited.active {
+  color: black;
+}
+
+a.active:hover.active {
+  text-shadow: 0px 0px 1px #111;
+}
+
+/*Home Div*/
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: black;
+}
+
+#Home {
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  background: linear-gradient(to bottom, grey, white);
+}
+
+.wordsCS {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+
+/*Drawing icon*/
+
+#circle {
+  margin-top: 40px;
+  -moz-border-radius: 250px;
+  -webkit-border-radius: 250px;
+  border-radius: 250px;
+  border: solid 3px black;
+  width: 200px;
+  height: 200px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+}
+
+#circle:hover {
+  color: grey;
+  border-color: grey;
+}
+
+/*Benefits Div*/
+
+#Benefits {
+  height: 500px;
+  margin-top: 0px;
+  padding: 20px 50px 20px 50px;
+  background-color: grey;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3, fa-check-circle-o {
+  margin-top: 0px;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*Financial Div*/
+
+#Financial {
+  height: 500px;
+  margin-top: 0px;
+  padding: 50px;
+
+}
+
+#Interest {
+  height: 500px;
+  margin-top: 0px;
+  padding: 50px;
+  background-color: rgb(244, 243, 196);
+}
+
+#Contact {
+  height: 500px;
+  margin-top: 0px;
+  padding: 50px;
+}
