@@ -113,25 +113,17 @@ h2 {
 #Benefits {
   height: 500px;
   margin-top: 0px;
-  padding: 20px 50px 20px 50px;
+  padding: 30px 50px 20px 50px;
   background-color: grey;
-  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
-h3, fa-check-circle-o {
+#Benefits h3 {
   margin-top: 0px;
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
-
-
-
-
-
-
-
-
 
 /*Financial Div*/
 
@@ -139,8 +131,16 @@ h3, fa-check-circle-o {
   height: 500px;
   margin-top: 0px;
   padding: 50px;
-
 }
+
+#Financial h3 {
+  margin-top: 0px;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+/*Interest Div*/
 
 #Interest {
   height: 500px;
@@ -149,8 +149,24 @@ h3, fa-check-circle-o {
   background-color: rgb(244, 243, 196);
 }
 
+#Interest h3 {
+  margin-top: 0px;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+/*Contact Div*/
+
 #Contact {
   height: 500px;
   margin-top: 0px;
   padding: 50px;
+}
+
+#Contact h3 {
+  margin-top: 0px;
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
 }
