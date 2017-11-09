@@ -12,11 +12,11 @@ $(window).on("scroll", function() {
 	if ($(window).scrollTop() > position.top + 0.005) { // height of navigation.
 		// activate class.
 		$("nav").addClass("active");
-    $("a").addClass("active");
+    $("nav a").addClass("active");
 	} else {
     // otherwise remove class.
 		$("nav").removeClass("active");
-    $("a").removeClass("active");
+    $("nav a").removeClass("active");
   };
 });
 
