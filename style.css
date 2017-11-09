@@ -124,7 +124,7 @@ h1 {
 #Benefits {
   height: 600px;
   margin-top: 0px;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   background-color: grey;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -133,7 +133,7 @@ h1 {
 
 #Benefits h3 {
   margin-top: 0px;
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   color: white;
 }
@@ -147,19 +147,30 @@ h1 {
 #Financial {
   height: 600px;
   margin-top: 0px;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   /*background-color: rgb(255, 255, 255);*/
-  background: linear-gradient(to bottom, rgb(245, 218, 218), white);
+  background: linear-gradient(to bottom, rgb(245, 218, 218), rgb(230, 218, 245));
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow: auto;
 }
 
-#Financial h3 {
+h3 {
   margin-top: 0px;
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   color: black;
+}
+
+/*Portfolio Div*/
+#Portfolio {
+  height: 600px;
+  margin-top: 0px;
+  padding: 50px 50px 30px 50px;
+  background: linear-gradient(to bottom, rgb(230, 218, 245), white);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
 }
 
 /*Interest Div*/
@@ -167,19 +178,12 @@ h1 {
 #Interest {
   height: 600px;
   margin-top: 0px;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   /*background-color: rgb(230, 218, 245);*/
-  background: linear-gradient(to bottom, rgb(230, 218, 245), white);
+  background-color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow: auto;
-}
-
-#Interest h3 {
-  margin-top: 0px;
-  font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
 }
 
 /*Contact Div*/
@@ -187,7 +191,7 @@ h1 {
 #Contact {
   height: 600px;
   margin-top: 0px;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   /*background-color: rgb(255, 255, 255);*/
   background: linear-gradient(to bottom, white, grey);
   font-family: 'Roboto', sans-serif;
@@ -195,15 +199,8 @@ h1 {
   overflow: auto;
 }
 
-#Contact h3 {
-  margin-top: 0px;
-  font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-}
-
 .social .fa{
-  font-size: 30px;
+  font-size: 35px;
   color: black;
   margin: 10px 10px 0px 10px;
   transition: .4s all ease;
