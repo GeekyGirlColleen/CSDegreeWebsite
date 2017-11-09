@@ -1,8 +1,10 @@
 html, body {
   margin: 0;
+  padding: 0;
   display: block;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
 }
 
 /*Navigation Bar*/
@@ -17,10 +19,6 @@ nav {
   padding-top: 15px;
   z-index:999;
   transition: .5s all ease;
-}
-
-nav.active {
-  background: transparent;
 }
 
 ul {
@@ -51,12 +49,17 @@ nav a:hover {
 
 /*Active Navigation Bar*/
 
+nav.active {
+  background: transparent;
+}
+
 nav a.active {
   color: black;
 }
 
 nav a.active:link, a.active:visited {
   color: black;
+  text-decoration: none;
 }
 
 nav a.active:hover {
@@ -119,11 +122,13 @@ h1 {
 /*Benefits Div*/
 
 #Benefits {
-  height: 500px;
+  height: 600px;
   margin-top: 0px;
-  padding: 30px 50px 20px 50px;
+  padding: 50px;
   background-color: grey;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
 }
 
 #Benefits h3 {
@@ -133,12 +138,21 @@ h1 {
   color: white;
 }
 
+.contentBenefits {
+  color: white;
+}
+
 /*Financial Div*/
 
 #Financial {
-  height: 500px;
+  height: 600px;
   margin-top: 0px;
   padding: 50px;
+  /*background-color: rgb(255, 255, 255);*/
+  background: linear-gradient(to bottom, rgb(245, 218, 218), white);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
 }
 
 #Financial h3 {
@@ -151,10 +165,14 @@ h1 {
 /*Interest Div*/
 
 #Interest {
-  height: 500px;
+  height: 600px;
   margin-top: 0px;
   padding: 50px;
-  background-color: rgb(244, 243, 196);
+  /*background-color: rgb(230, 218, 245);*/
+  background: linear-gradient(to bottom, rgb(230, 218, 245), white);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
 }
 
 #Interest h3 {
@@ -167,9 +185,14 @@ h1 {
 /*Contact Div*/
 
 #Contact {
-  height: 500px;
+  height: 600px;
   margin-top: 0px;
   padding: 50px;
+  /*background-color: rgb(255, 255, 255);*/
+  background: linear-gradient(to bottom, white, grey);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
 }
 
 #Contact h3 {
@@ -177,4 +200,28 @@ h1 {
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
   color: black;
+}
+
+.social .fa{
+  font-size: 30px;
+  color: black;
+  margin: 10px 10px 0px 10px;
+  transition: .4s all ease;
+}
+
+.social .fa:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px black;
+}
+
+/*Footer Div*/
+
+#footer {
+  background: black;
+  width:100%;
+  height:70px;
+  padding-top: 25px;
+  text-align: center;
+  color: white;
 }

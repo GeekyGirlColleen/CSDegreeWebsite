@@ -33,33 +33,69 @@
   <!-- Start Home -->
   <div id="Home">
     <div class="theOutside">
-    <div class="theInside">
-      <h1>Why Colleen Should Study</h1>
-      <h1 class="wordsCS">Computer Science</h1>
-      <center>
-        <div id="circle">
-          <div id="codingSign">
-            <i class="fa fa-code" aria-hidden="true"></i>
+      <div class="theInside">
+        <h1>Why Colleen Should Study</h1>
+        <h1 class="wordsCS">Computer Science</h1>
+        <center>
+          <div id="circle">
+            <div id="codingSign">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </div>
           </div>
-        </div>
-      </center>
-    </div>
+        </center>
+      </div>
     </div>
   </div>
   <!-- Start Benefits -->
   <div id="Benefits">
     <h3>Benefits <i class="fa fa-check-circle-o" aria-hidden="true"></i></h3>
-    <p>Things to say why this will benefit me. Goodness. I hope I do well</p>
+    <div class="contentBenefits">
+      <p>Things to say why this will benefit me. Goodness. I hope I do well</p>
+    </div>
   </div>
 
   <div id="Financial">
     <h3>Financial <i class="fa fa-usd" aria-hidden="true"></i></h3>
+    <div class="contentFinancial">
+      <p>Yes, I understand that it means more money. This also means, we need to stop going on family vacations and save up money for Colleen and Calvin's education funds</p>
+    </div>
   </div>
   <div id="Interest">
     <h3>Interest <i class="fa fa-lightbulb-o" aria-hidden="true"></i></h3>
   </div>
+
+  <!-- Start Contact -->
   <div id="Contact">
     <h3>Contact <i class="fa fa-phone" aria-hidden="true"></i></h3>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label for="name">Your name:</label><br>
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br>
+      </div>
+      <div class="row">
+        <label for="email">Your email:</label><br>
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br>
+      </div>
+      <div class="row">
+        <label for="message">Your message:</label><br>
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      </div>
+      <input id="submit_button" type="submit" value="Send email" />
+    </form>
+    <div class="social">
+      <a href="mailto:geekygirlcolleen@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Start Footer -->
+  <div id="footer">
+    <p>&copy; Colleen Ng | Made with haste and love and cafeine <i class="fa fa-coffee" aria-hidden="true"></i>
+      <p>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
