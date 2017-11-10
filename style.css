@@ -5,6 +5,9 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
+  background-image: url(images/CoverPhoto.JPG);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 /*Navigation Bar*/
@@ -19,14 +22,15 @@ nav {
   padding-top: 15px;
   z-index:999;
   transition: .5s all ease;
+  hidden: true;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+nav li {
   color: white;
   display: inline-block;
   margin-left: 30px;
@@ -39,7 +43,7 @@ nav a {
 
 nav a:link, nav a:visited {
   color: white;
-
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -50,7 +54,8 @@ nav a:hover {
 /*Active Navigation Bar*/
 
 nav.active {
-  background: transparent;
+  /*background: transparent;*/
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav a.active {
@@ -124,7 +129,7 @@ h1 {
 #Benefits {
   height: 600px;
   margin-top: 0px;
-  padding: 50px 50px 30px 50px;
+  padding: 50px 0px 0px 0px;
   background-color: grey;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -142,24 +147,53 @@ h1 {
   color: white;
 }
 
-/*Financial Div*/
+#Benefits .container-fluid {
+  width: 100%;
+  padding-top: 60px;
+}
 
+#Benefits .benefit {
+  padding: 10px 35px 10px 35px;
+  color: white;
+  font-size: 25px;
+}
+
+
+
+/*Financial Div*/
 #Financial {
   height: 600px;
   margin-top: 0px;
   padding: 50px 50px 30px 50px;
-  /*background-color: rgb(255, 255, 255);*/
-  background: linear-gradient(to bottom, rgb(245, 218, 218), rgb(230, 218, 245));
+  background-color: rgba(0, 0, 0, 0.2);
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow: auto;
+  color: white;
 }
 
+/*Styles for each h3*/
 h3 {
-  margin-top: 0px;
+  margin: 0;
   font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   color: black;
+}
+
+.contentFinancial {
+  padding: 10px;
+  background-color: white;
+}
+
+#Financial .container-fluid {
+  width: 100%;
+  padding-top: 60px;
+}
+
+#Financial .financial {
+  /*padding: 10px 35px 10px 35px;*/
+  color: black;
+  font-size: 25px;
 }
 
 /*Portfolio Div*/
@@ -197,6 +231,10 @@ h3 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow: auto;
+}
+
+#Contact form {
+  padding-top: 10px;
 }
 
 .social .fa{
