@@ -39,3 +39,20 @@ $(window).on("scroll", function() {
       });
     }
   });
+
+// Activating the modals
+$(".open.mufy").on("click", function(){
+  $(".overlay, .financial1").addClass("active");
+});
+
+$(".open.monash").on("click", function(){
+  $(".overlay, .financial2").addClass("active");
+});
+
+$(".close.mufy, .overlay").on("click", function(){
+   $(".overlay, .financial1").removeClass("active");
+});
+
+$(".close.monash, .overlay").on("click", function(){
+   $(".overlay, .financial2").removeClass("active");
+});

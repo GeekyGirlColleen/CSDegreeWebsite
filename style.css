@@ -20,7 +20,7 @@ nav {
   width: 100%;
   background: rgb(0, 0, 0);
   padding-top: 15px;
-  z-index:999;
+  z-index: 999;
   transition: .5s all ease;
   hidden: true;
 }
@@ -55,20 +55,21 @@ nav a:hover {
 
 nav.active {
   /*background: transparent;*/
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav a.active {
-  color: black;
+  color: white;
 }
 
 nav a.active:link, a.active:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 nav a.active:hover {
-  text-shadow: 0px 0px 1px #111;
+  color: white;
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
 /*Home Div*/
@@ -82,7 +83,7 @@ h1 {
 
 #Home {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
   padding: 50px;
   background: linear-gradient(to bottom, grey, white);
@@ -105,8 +106,7 @@ h1 {
   font-size: 50px;
 }
 
-
-/*Drawing icon*/
+/*Coding icon*/
 
 #circle {
   margin-top: 40px;
@@ -129,7 +129,7 @@ h1 {
 #Benefits {
   height: 600px;
   margin-top: 0px;
-  padding: 50px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
   background-color: grey;
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -158,13 +158,12 @@ h1 {
   font-size: 25px;
 }
 
-
-
 /*Financial Div*/
+
 #Financial {
   height: 600px;
   margin-top: 0px;
-  padding: 50px 50px 30px 50px;
+  padding: 70px 50px 30px 50px;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -172,31 +171,126 @@ h1 {
   color: white;
 }
 
-/*Styles for each h3*/
-h3 {
-  margin: 0;
-  font-size: 50px;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-}
-
 .contentFinancial {
-  padding: 10px;
+  height: 460px;
+  padding: 10px 10px 0px 10px;
   background-color: white;
+  text-align: center;
 }
 
 #Financial .container-fluid {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
-#Financial .financial {
-  /*padding: 10px 35px 10px 35px;*/
+h4 {
   color: black;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.col-md-6 {
+  height: 395px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.financial1, .financial2 {
+  padding: 60px 40px 10px 40px;
+  color: black;
+  font-size: 23px;
+  text-align: justify;
+  max-height: calc(100% - 100px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 700px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom right, white, #F8F8F8) !important;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.financial1.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.financial2.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.open {
+  display: inline-block;
+  background: linear-gradient(to bottom, rgb(246, 130, 130), rgb(173, 139, 217));
+  border: none;
+  color: white;
+  height: 250px;
+  width: 250px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 50%;
+}
+
+.open:hover {
+  border: 1px solid rgb(246, 130, 130);
+  color: rgb(246, 130, 130);
+  background: transparent;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .5s ease;
+  z-index: -1;
+}
+
+.overlay.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+button.close {
+  display: inline-block;
+  background: linear-gradient(to bottom, rgb(246, 130, 130), rgb(173, 139, 217));
+  border: 1px solid transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 45px;
+  margin: .25rem 0;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: visible;
+  white-space: nowrap;
+  margin: 0 0 1rem;
+  opacity: 1;
+}
+
+button.close:hover {
+  border: 1px solid rgb(246, 130, 130);
+  color: rgb(246, 130, 130);
+  background: transparent;
+  opacity: 1;
 }
 
 /*Portfolio Div*/
+
 #Portfolio {
   height: 600px;
   margin-top: 0px;
@@ -205,6 +299,15 @@ h3 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   overflow: auto;
+}
+
+/*Styles for each h3*/
+
+h3 {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
 }
 
 /*Interest Div*/
@@ -233,11 +336,15 @@ h3 {
   overflow: auto;
 }
 
-#Contact form {
+form {
   padding-top: 10px;
 }
 
-.social .fa{
+form label {
+  font-size: 20px;
+}
+
+.social .fa {
   font-size: 35px;
   color: black;
   margin: 10px 10px 0px 10px;
@@ -254,8 +361,8 @@ h3 {
 
 #footer {
   background: black;
-  width:100%;
-  height:70px;
+  width: 100%;
+  height: 70px;
   padding-top: 25px;
   text-align: center;
   color: white;
