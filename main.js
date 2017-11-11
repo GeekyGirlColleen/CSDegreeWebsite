@@ -1,15 +1,14 @@
 // Makes icon bounce
 $(document).ready(function() {
-  $("#circle").addClass("animated bounce");
+  $("#Circle").addClass("animated bounce");
 });
 
 // Navigation bar changing color and background
-
 $(window).on("scroll", function() {
   var position = $("#Home").offset();
 
   // If the top of the screen is greater than the #begin element.
-  if ($(window).scrollTop() > position.top + 0.005) { // height of navigation.
+  if ($(window).scrollTop() > position.top + 0.005) {
     // activate class.
     $("nav").addClass("active");
     $("nav a").addClass("active");
@@ -62,30 +61,52 @@ $(document).ready(function() {
   // Adding transition to port1
   $("#Port1").hover(function() {
     $("#Port1").addClass('transition');
+    $(".info1").addClass('activateInfo');
 
   }, function() {
     $("#Port1").removeClass('transition');
+    $(".info1").removeClass('activateInfo');
   });
   // Adding transition to port2
   $("#Port2").hover(function() {
     $("#Port2").addClass('transition');
+    $(".info2").addClass('activateInfo');
 
   }, function() {
     $("#Port2").removeClass('transition');
+    $(".info2").removeClass('activateInfo');
   });
   // Adding transition to port3
   $("#Port3").hover(function() {
     $("#Port3").addClass('transition');
+    $(".info3").addClass('activateInfo');
 
   }, function() {
     $("#Port3").removeClass('transition');
+    $(".info3").removeClass('activateInfo');
   });
 });
 
-// Scalling Images
-$(window).load(function(){
- $('.portfolio').find('img').each(function(){
-  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
-  $(this).addClass(imgClass);
- })
-})
+// Showing tabs for Interest div
+$(".tab-list").on("click", ".tab", function(e) {
+    e.preventDefault();
+
+    $(".tab").removeClass("active");
+    $(".tab-content").removeClass("show");
+    $(this).addClass("active");
+    $($(this).attr("href")).addClass("show");
+});
+
+// Making the phone "buzz"
+$(window).on("scroll", function() {
+  var position = $("#Home").offset();
+
+  // If the top of the screen is slightly less than the #Contact element.
+  if ($(window).scrollTop() > $("#Contact").offset().top - 70) {
+    // activate class.
+    $("#PhoneIcon").addClass("animated shake");
+  } else {
+    // otherwise remove class.
+    $("#PhoneIcon").removeClass("animated shake");
+  };
+});

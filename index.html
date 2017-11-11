@@ -38,8 +38,8 @@
         <h1>Why Colleen Should Study</h1>
         <h1 class="wordsCS">Computer Science</h1>
         <center>
-          <div id="circle">
-            <div id="codingSign">
+          <div id="Circle">
+            <div>
               <i class="fa fa-code" aria-hidden="true"></i>
             </div>
           </div>
@@ -103,16 +103,19 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 contentPortfolio">
-          <div class="portfolio transition" id="Port1"><img src="images/HamiltonGame.png" alt="Hamilton Shooting Game On Scratch" height="100%" width="100%"></div>
-          <br><br><p>Hamilton</p>
+          <div class="portfolio transition" id="Port1"><a href="https://scratch.mit.edu/projects/157851019/" target="_blank"><img src="images/HamiltonGame.png" alt="Hamilton Shooting Game On Scratch" height="100%" width="100%"></a></div>
+          <br><br>
+          <p class="info1">Hamilton inspired shooting game on coded with Scratch, my first beginner project and is awesome and bug-free</p>
         </div>
         <div class="col-md-4 contentPortfolio">
           <div class="portfolio transition" id="Port2"><img src="images/BiteNBitten.png" alt="Bite and Bitten Application on VB.net" height="100%" width="100%"></div>
-          <br><br><p>Bite and Bitten</p>
+          <br><br>
+          <p class="info2">Bite and Bitten Cake Shop application. The whole user interface is fully functioning, just not hooked up to a server or database. Or an actual cake shop.</p>
         </div>
         <div class="col-md-4 contentPortfolio">
           <div class="portfolio transition" id="Port3"><img src="images/SoundboardApp.png" alt="SoundboardApp Written in Swift, iPhone App" height="100%" width="100%"></div>
-          <br><br><p>iOS App</p>
+          <br><br>
+          <p class="info3">One of many small iOS Apps I've created while learning the mindset and conventions of programmers</p>
         </div>
       </div>
     </div>
@@ -121,12 +124,26 @@
   <!-- Start Interest -->
   <div id="Interest">
     <h3>Interest <i class="fa fa-lightbulb-o" aria-hidden="true"></i></h3>
-    <p>1.</p>
+    <div class="tabs">
+      <div class="tab-list">
+        <a class="tab active" href="#tab1">One</a>
+        <a class="tab" href="#tab2">Two</a>
+        <a class="tab" href="#tab3">Three</a>
+      </div>
+      <div id="tab1" class="tab-content show">Would love to build more than just a simple website like this slightly crappy one. In fact, this is just web design, a really simple one. I want to learn how to build web applications where websites like this is connected to a server and a database etc. That'd be cool wouldn't it?</div>
+
+      <div id="tab2" class="tab-content">I like learning, this career path is a road of non-stop learning and that is awesome, keeps my brain sharp and alert and taking in new information all the time. Don't worry, I will somehow still know all the words to all my favorite songs and musicals. Can't stop me from playing my guitar.</div>
+
+      <div id="tab3" class="tab-content">TBH, while working on my Hamilton game, I realized I've never been this <i>semangat</i> to do something in a very very long time. I would wake up at 8am on long weekends and start planning my day and what I'm going to do with my Hamilton game an I'll be outside the library at 9.58am waiting to go in to use their computers. I'll sleep go to bed at 1am everyday and won't sleep til 2/3am because I'll involuntarily be thinking of ways to debug my code, things to add, newer ways to write code etc. and I'll periodically type the ideas into my phone to remind myself the next morning. If that's not commitment and passion, I don't know what is.</div>
+    </div>
   </div>
 
   <!-- Start Contact -->
   <div id="Contact">
-    <h3>Contact <i class="fa fa-phone" aria-hidden="true"></i></h3>
+    <h3>Contact
+      <i class="fa fa-phone" aria-hidden="true" id="PhoneIcon"></i>
+    </h3>
+    <div id="callColleen"></div>
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
       <div class="row">
         <label for="name">Your name:</label><br>
