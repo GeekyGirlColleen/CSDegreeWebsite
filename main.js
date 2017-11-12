@@ -110,3 +110,8 @@ $(window).on("scroll", function() {
     $("#PhoneIcon").removeClass("animated shake");
   };
 });
+
+// Toggle accordion
+$(".accordion").on("click", ".accordion-header", function() {
+   $(this).toggleClass("active").next().slideToggle();
+});

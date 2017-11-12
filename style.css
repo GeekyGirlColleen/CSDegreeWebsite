@@ -361,6 +361,81 @@ button.close:hover {
   visibility: visible;
 }
 
+/*The Plan Div*/
+
+#Plan {
+  height: 650px;
+  margin-top: 0px;
+  padding: 80px 50px 30px 0px;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(210, 131, 131), rgb(208, 92, 92));
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: auto;
+}
+
+#Plan h3 {
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: Black;
+}
+
+.accordion {
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+	max-width: 400px;
+	background: white;
+	margin: 45px auto 0px auto;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+	border-bottom: 1px solid #DDE0E7;
+	color: #2a313a;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1.5rem;
+}
+
+.accordion-header:hover {
+	background: #F6F7F9;
+}
+
+.accordion-content {
+	display: none;
+	border-bottom: 1px solid #DDE0E7;
+	background: #F6F7F9;
+	padding: 5px 30px 10px 10px;
+	color: #4a5666;
+  text-align: justify;
+}
+
+.accordion-header::before {
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	width: .75rem;
+	height: .75rem;
+	border-radius: 50%;
+	background-color: #B1B5BE;
+	margin-right: .75rem;
+}
+
+.active.accordion-header::before {
+	background-color: #FC6468;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Interest Div*/
 
 #Interest {
@@ -436,7 +511,6 @@ button.close:hover {
   height: 600px;
   margin-top: 0px;
   padding: 80px 50px 0px 50px;
-  /*background-color: rgb(255, 255, 255);*/
   background: linear-gradient(to bottom, white, grey);
   font-family: 'Roboto', sans-serif;
   text-align: center;
